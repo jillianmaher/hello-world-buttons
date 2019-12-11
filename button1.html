@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Button Demo</title>
-    <script src="script.js"></script>
 </head>
 <body>
     <h2>The Button Element</h2>
@@ -111,12 +110,12 @@
     <i>Update the button below to change color when clicked. Follow the steps below:</i>
     <ol>
         <li>Go to your <strong>script.js</strong> file and add a function titled <strong>changeColor()</strong></li>
-        <li>Inside your function, copy the code from above and paste in your function.</li>
+        <li>Inside your function, copy the code from above and paste in your function. (change the id to demo2)</li>
         <li>Test it!</li>
         <li>Change the color from red to another color of your choice.</li>
     </ol>
 
-    <button class="button2" id="demo" onclick="changeColor()">
+    <button class="button2" id="demo2" onclick="changeColor()">
         Click Me!
     </button>
 
@@ -146,24 +145,41 @@
     <p>Make space for four buttons, they will stay next to each other using the <strong>display: inline-block;</strong> rule set.</p>
     <p>Add three more buttons below.</p>
 
-    <p class="question">Question Here?</p>
+    <p class="question" id="question">Question Here?</p>
     <button class="quizButton">Answer One</button>
 
     <h3>Try It: Make a Question and List of Answers.</h3>
     <p>In the Javascript file, create a variable for the question.</p>
-    <pre>var question = "Which of the following is a school color?;</pre>
+    <pre>var question = "Which of the following is a school color?";</pre>
     <p>&nbsp;</p>
     <p>Update the question on the HTML page by adding the following script:</p>
-    <pre>document.getElementByClassName("question").innerHTML = question;</pre>
+    <pre>document.getElementById("question").innerHTML = question;</pre>
 
     <p>&nbsp;</p>
     <p>Now create a list with each of the different answers. </p>
-    <pre>var answers = {'Red', 'Green', 'Blue', 'Yellow'};</pre>
+    <pre>var answers = ['Red', 'Green', 'Blue', 'Yellow'];</pre>
 
+    <p>&nbsp;</p>
+    <p>How can we assign all of these answers to our four buttons?</p>
+    <p>We could set a unique <strong>id</strong> for each button, but then you have a lot of code needed in your script.</p>
+    <p>Let's use lists to store our buttons, using the <strong>getElementsByClassName</strong> function.</p>
+
+    <p>&nbsp;</p>
+    <p>Add the following code below your existing variables.</p>
+    <pre>var answerButtons = document.getElementsByClassName("quizButton");</pre>
+
+    <p>&nbsp;</p>
+    <p>We can go button by button through the <strong>answerButtons</strong> list in order to change the text.</p>
+    <p>Add the following loop after the code to update the question.</p>
+    <img src="loopAnswer.png"/>
+
+    <p>Feel free to play around with onClick to respond to the correct answer!</p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
+    
+    <script src="script.js"></script>
 
 </body>
 </html>
