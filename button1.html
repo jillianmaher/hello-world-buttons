@@ -174,7 +174,32 @@
     <p>Add the following loop after the code to update the question.</p>
     <img src="loopAnswers.png"/>
 
-    <p>Feel free to play around with onClick to respond to the correct answer!</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h2>Try It: Respond to Answers Picked</h2>
+    <p>Let's edit the button color when the user selects their answer.</p>
+    <p>First, we need to mark which button is the correct answer.</p>
+    <p>Add a variable at the top and set it with the number of the answer.</p>
+    <pre>var correct = 3;  //The first answer is at position 0, the last is at 3.</pre>
+
+    <p>&nbsp;</p>
+    <p>Each button needs to check if it is right or wrong. <strong>Inside the existing loop,</strong> add code for each button to respond when clicked.</p>
+    <img src="clickCorrect.png"/>
+
+    <p>&nbsp;</p>
+    <p>Check your buttons! Is the right button responding?</p>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h2>Try It: Disable Buttons After Guessing</h2>
+    <p>We want to leave the user with only one guess. We can disable a single button by adding the <strong>disabled</strong> attribute.</p>
+    <p>However, we want to make all buttons disable, not just the current button.</p>
+    <p>Add a function at the end of the script file that loops through all buttons and adds the disabled attribute.</p>
+    <img src="disableFunction.png" />
+
+    <p>&nbsp;</p>
+    <p>Add a call to this function when the user clicks any button. </p>
+    <img src="callFunction.png" />
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
