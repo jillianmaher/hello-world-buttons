@@ -8,4 +8,4 @@ Use this repository as a way to practice working with html button design. Follow
 
 Use the **button1.html** file to view different button layouts. 
 
-You will also use the file to create 
+You will also use the file to create a quiz using buttons and Javascript.
